@@ -6,6 +6,9 @@ Contains snippets, test code, and concepts of C++
 ### Design Patterns
 * [Type Erasure](type_erasure/README.md)
 
+### C++ Features
+* [Variadic Templates](variadic_templates/README.md)
+
 ### Tools
 * [Valgrind](type_erasure/README.md)
 * [Clang Tidy](type_erasure/README.md)
