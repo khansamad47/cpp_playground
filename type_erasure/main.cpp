@@ -1,5 +1,6 @@
 #include <iostream>
 #include <vector>
+#include <memory>
 
 class TypeErasedContainer {
   private:
@@ -19,18 +20,21 @@ class TypeErasedContainer {
             p_obj->func();
         }
     };
-    std::vector<TypeConcept*> d_data;
+    std::vector< std::unique_ptr<TypeConcept> > d_data;
 
   public:
     template<class T>
     void insert(T* item) {
-        d_data.push_back(new TypeModel<T>(item));    
+        d_data.emplace_back(new TypeModel<T>(item));    
     }
     void func() {
         for (auto& item: d_data)
         {
             item->func();
         }
+    }
+    ~TypeErasedContainer(){
+        
     }
 };
 class Foo {
@@ -52,8 +56,10 @@ class Bar {
 int main()
 {
     TypeErasedContainer list;
-    list.insert(new Foo());
-    list.insert(new Bar());
+    std::unique_ptr<Foo> pF (new Foo());
+    std::unique_ptr<Bar> pB (new Bar());
+    list.insert(pF.get());
+    list.insert(pB.get());
     list.func();
     return 0;
 }
