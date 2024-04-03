@@ -9,6 +9,10 @@ Contains snippets, test code, and concepts of C++
 ### C++ Features
 * [Variadic Templates](variadic_templates/README.md)
 
+### Concurrency
+* [Hierarchical Mutex]
+* [Shared Mutex Mutex](shared_mutex/README.md)
+
 ### Tools
 * [Valgrind](type_erasure/README.md)
 * [Clang Tidy](type_erasure/README.md)
