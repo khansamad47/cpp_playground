@@ -13,6 +13,10 @@ Contains snippets, test code, and concepts of C++
 * [Hierarchical Mutex]
 * [Shared Mutex Mutex](shared_mutex/README.md)
 
+### Meta Programming
+* [Type Traits](meta_programming_type_traits/README.md)
+
 ### Tools
 * [Valgrind](type_erasure/README.md)
 * [Clang Tidy](type_erasure/README.md)
+* [nm](meta_programming_type_traits/README.md)
