@@ -11,7 +11,8 @@ Contains snippets, test code, and concepts of C++
 
 ### Concurrency
 * [Hierarchical Mutex]
-* [Shared Mutex Mutex](shared_mutex/README.md)
+* [Shared Mutex - Read Writer Lock](shared_mutex/README.md)
+* [Condition Variable - Thead Safe Queue]
 
 ### Meta Programming
 * [Type Traits](meta_programming_type_traits/README.md)
