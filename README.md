@@ -8,6 +8,7 @@ Contains snippets, test code, and concepts of C++
 
 ### C++ Features
 * [Variadic Templates](variadic_templates/README.md)
+* [Type Alias](type_alias/README.md)
 
 ### Concurrency
 * [Hierarchical Mutex]
